@@ -1,0 +1,26 @@
+The following commands are to install the programs that go with my rice:
+
+If you haven't already, install i3wm. Specifically, i3-gaps:
+$ sudo pacman -S i3-gaps
+
+Now here are the programs:
+$ sudo pacman -S git
+$ git clone https://github.com/LukeSmithxyz/dmenu.git
+$ cd dmenu
+$ make
+$ sudo make install
+$ cd
+$ git clone https://github.com/LukeSmithxyz/st.git
+$ cd st
+$ make
+$ sudo make install
+$ cd
+$ git clone https://aur.archlinux.org/yay.git
+$ cd yay
+$ makepkg -si
+$ cd
+$ yay polybar-git
+$ sudo pacman -S ranger
+$ sudo pacman -S python-pywal
+
+Also, rename 'Xresources' and 'bashrc' to '.Xresources' and '.bashrc'
